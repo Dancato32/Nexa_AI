@@ -4,7 +4,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM,pipeline
 
 
 
-HUGGINGFACE_API_KEY="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"
+# HUGGINGFACE_API_KEY="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"
 huggingface_model="TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
 required_files=[
