@@ -44,15 +44,18 @@
     </div>
     
     <div class="card-body chat-box">
-      <!-- Example AI message -->
-      <div class="message ai-message">
-        <div class="chat-bubble">Hi there! What would you like to learn today?</div>
-      </div>
-
-      <!-- Example User message -->
-      <div class="message user-message">
-        <div class="chat-bubble">Tell me about Newton's laws.</div>
-      </div>
+      {% if ai_response %}
+        <div class="message user-message">
+          <div class="chat-bubble">{{ user_message }}</div>
+        </div>
+        <div class="message ai-message">
+          <div class="chat-bubble">{{ ai_response }}</div>
+        </div>
+      {% else %}
+        <div class="message ai-message">
+          <div class="chat-bubble">Hi there! What would you like to learn today?</div>
+        </div>
+      {% endif %}
     </div>
 
     <div class="card-footer">
