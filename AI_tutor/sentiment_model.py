@@ -574,7 +574,7 @@ science_embeddings = embedder.encode([item["q"] for item in science_kb], convert
 
 
 
-user_input = input("Ask me a question: ")
-response = handle_user_input(user_input)
-print("AI Tutor:", response)
-    
+# user_input = input("Ask me a question: ")
+# response = handle_user_input(user_input)
+
+  
